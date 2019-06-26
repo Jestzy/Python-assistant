@@ -34,7 +34,7 @@ class QFrame(wx.Frame):
         input = input.lower()
         try:
             #wolframalpha
-            app_id = "WLR78W-5THTGGW3A5"
+            app_id = "YOUR_APPID"
             client = wolframalpha.Client(app_id)
             res = client.query(input)
             answer = next(res.results).text
